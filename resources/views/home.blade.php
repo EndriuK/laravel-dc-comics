@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layouts.app')
 
-    @vite('resources/js/app.js')
-</head>
-<body>
-    
-</body>
-</html>
+@section('content')
+    <h1>Welcome to the Comics App</h1>
+    <p><a href="{{ route('comics.index') }}">View all Comics</a></p>
+    <p><a href="{{ route('comics.create') }}">Create a New Comic</a></p>
+@endsection
